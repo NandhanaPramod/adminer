@@ -22,7 +22,7 @@ jobs:
       # Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t nandhanas/adminer-demo:${{ github.sha }} .
+          docker build --no-cache -t nandhanas/adminer-demo:${{ github.sha }} .
 
       # Login to Docker Hub
       - name: Login to Docker Hub
