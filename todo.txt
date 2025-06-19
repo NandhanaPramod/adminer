@@ -1,4 +1,4 @@
-Transactions in export
+Transactions in exporttt
 Create view and routine options
 Variables editation
 Blob download and image display in edit form (important for Editor with hidden fields in select and SQL command)
