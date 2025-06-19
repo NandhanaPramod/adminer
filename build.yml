@@ -1,4 +1,4 @@
-name: CI/CD Demo 
+name: CI/CD Demo
 
 on:
   push:
@@ -36,13 +36,13 @@ jobs:
         run: |
           docker push nandhanapramod/adminer-demo:${{ github.sha }}
 
-      # Set up Google Cloud SDK
+      # Set up Google Cloud SDK (FIXED)
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
-         with:
-         project_id: secret-backbone-426709-n9
-         service_account_key: ${{ secrets.GCP_SA_KEY }}
-        export_default_credentials: true
+        with:
+          project_id: secret-backbone-426709-n9
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
 
       # Deploy public Adminer image to Cloud Run
       - name: Deploy public Adminer image to Cloud Run
