@@ -13,4 +13,4 @@ RUN echo "upload_max_filesize=100M\npost_max_size=100M" > /usr/local/etc/php/con
 # Expose port 80 (default for Apache)
 EXPOSE 80
 
-# The default command will run Apache in the foreground (from the base image)
+# The default command will run Apache in the foreground (from the base image)0
