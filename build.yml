@@ -37,25 +37,7 @@ jobs:
           docker push nandhanapramod/adminer-demo:${{ github.sha }}
 
       # Set up Google Cloud SDK
-      - name: Set up Google Cloud SDK
-  uses: google-github-actions/setup-gcloud@v2
-  with:
-    project_id: secret-backbone-426709-n9
-    service_account_key: |
-      {
-        "type": "service_account",
-        "project_id": "secret-backbone-426709-n9",
-        "private_key_id": "cb38af011d5ef94540fffb31e7b87eaed82530d9",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCSyv5jBjofH9YL\nGITdWnapFyN76/gCt8x1suFGfZUvtlh+hKpgZMi29BZIA03DOz8A4g6wKaJKUOzU\n4q4quBcCTbxlTo6MU4Nrug5U0pK/vC5F2SGiDrSrJ30jXDg3ontOlrMHL4HTzejF\nn0zzkEc6P+Ac3gpxPVaB+i8Ze1Lmp6wuM4v9I1v1X7YxM9xtJ9kU5FHP39THjLoZ\n46VymxNgfp/hsUosGqE79C6dYEQkKmQLO9j9gs8GHb4xcEWHl2wIlzVi7wRrcoU6\nr17jDAc80fmJ4lOwqeWkxIX5VJdT9aHzdzgCgZzFUdynVVZL496ryp0tGqHvSaqb\nQzLr55dFAgMBAAECgf9eqyUw6uzEJd2X4+tlothKZ7thFoCPQC0cIVqOAdYbO/4J\nmh8T2FIAEgRMoDs5k+JayQjjLSnJw81ffgShu33oGAboG6gGPjw2ikdNbOadwNh9\nM3GW+H6L4wVRSKgsBeqAEUn92FjIjOl4I5EwT/WftPiHPxIWj167Dh5SA+nzCWjd\nRjZHvEeBSFSv+2GTJXKg6Jeu+8j/hW4Dv14JYbVwk+Gl6Gr/xKAqk4kieRL1+MVR\n5TeG4aQvS7Ao5ABES9lrUfOCWTLo18PpbsHJwIcmK6h0K6j40FVWFiFGhDqcIz37\ngXm5Y0gA+AkCMno1dJoBn9FJTQRr6ko76mQwwFsCgYEAwpO9z+WnZ8BAYKEEjiIL\nwUaVNUlroCIv1MsSz4QD1gPpZ844Rte/RstADc6ecmooxL1ipaypkT1XNIofaxj1\nVGwUkS5kvSxKx3/C+YTT3x4TSRXLbQrIEWXkOcnGbi7JTI7uWJk3hu1GVvIBLDyk\nHzU41pxvu8LvyKyQEmUz3vMCgYEAwSGx7wVsgsw1JE0uHTUMjWDn9ysphDgJlixF\n7pxVlHiDqiiTvE1molVpE8QLdUKKfTRRALuH4qm05zjyo5uan+IGBWGB5IpLIh9n\nZ6logoRPWM7orCAbqEljrwQ430v9RTxM7kAZ2p/90RnpMkSxY5K/8h6r+psquilN\nhmO/bucCgYEAux8+IZsoHTzkLIltSgsv5tWsVKyhFkUKXshU9MBut/jXFH9b27VM\nPBbnKOAVvM6fGmVPYyjjgcvN+7cBdAtyk5fFR8GoG81mtOkHZtL4ts/DmDufgOQn\nd6PXkkOb0wanjDrAuO/QWLADP0ZJHnPLGkAiwzF6usVDuGdLvoUZF0UCgYBFC8zX\nTTMcF/GvxsADxSF1sf18SjwPfxE+VRmzUsTtzaAUx2j52xokUzC71kzaYS2t0XRc\nNK9CA7YfLCbjAxBmtKG+brvHfwGZc2y+jLxGXRMZBu/8CYaZxZMT0QicHEix5fsC\n+nvDw4s0pHTQeeqJVL+2yexmLe86muWSdDrOZQKBgQCFh8399Ls/UQfTWVAHo1OQ\nsXe2R9N8zHoV3pZro+20K50CfiaLuvtVs6Bv0/gZKYgwfE0MYM6zE7GvV0e1wd3H\nqXFmPWHdlSk9nNx7Cvla0r/ulnytKzgX06pBrNl/FxSpw1xjTq+V+FPyFArvw6OB\nJQr6zOPYLW5I3Z2cbJIojw==\n-----END PRIVATE KEY-----\n",
-        "client_email": "github-actions-deployer@secret-backbone-426709-n9.iam.gserviceaccount.com",
-        "client_id": "116594383548832961256",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-deployer%40secret-backbone-426709-n9.iam.gserviceaccount.com",
-        "universe_domain": "googleapis.com"
-      }
-    export_default_credentials: true
+ 
 
       # Deploy public Adminer image to Cloud Run
       - name: Deploy public Adminer image to Cloud Run
