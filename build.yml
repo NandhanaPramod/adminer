@@ -31,11 +31,6 @@ jobs:
           username: nandhanas
           password: dckr_pat_FmtikC0x7EMLiWzlXnJh88hiTEY
 
-      # Push Docker image to Docker Hub
-      - name: Push Docker image
-        run: |
-          docker push nandhanas/adminer-demo:${{ github.sha }}
-
       # Set up Google Cloud SDK (FIXED)
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
